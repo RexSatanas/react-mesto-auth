@@ -1,5 +1,7 @@
 import React from 'react'
+import { Route, Redirect } from 'react-router-dom';
 import Header from './Header'
+import SignIn from './SignIn'
 import Main from './Main'
 import Footer from './Footer'
 import EditAvatarPopup from './EditAvatarPopup'
@@ -9,16 +11,21 @@ import PopupWithConfirm from './PopupWithConfirm'
 import ImagePopup from './ImagePopup'
 import api from '../utils/api'
 import {CurrentUserContext} from '../contexts/CurrentUserContext'
+import ProtectedRoute from "./ProtectedRoute";
 function App() {
+    //попапы
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
     const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
     const [isAddCardPopupOpen, setIsAddCardPopupOpen] = React.useState(false);
     const [isConfirmPopupOpen, setIsConfirmPopupOpen] = React.useState(false);
+    //карточки
     const [selectedCard, setSelectedCard] = React.useState(null);
     const [cardIdToDelete, setCardIdToDelete] = React.useState(null);
     const [currentUser, setCurrentUser] = React.useState({})
     const [cards, setCards] = React.useState([]);
     const [isLoading, setIsLoading] = React.useState(false);
+    //логин-регистрация
+    const [loggedIn, setLoggedIn] = React.useState(false)
 
     React.useEffect(() => {
         Promise.all([
@@ -108,7 +115,8 @@ function App() {
   return (
       <CurrentUserContext.Provider value={currentUser}>
           <Header />
-          <Main
+          <ProtectedRoute
+              component={Main}
               onEditAvatar={handleEditAvatarClick}
               onEditProfile={handleEditProfileClick}
               onAddPlace={handleAddPlaceClick}
@@ -117,6 +125,14 @@ function App() {
               onCardDelete={handleCardDelete}
               cards={cards}
           />
+          <Route path='/sign-up'>
+          </Route>
+          <Route path='/sign-in'>
+              <SignIn/>
+          </Route>
+          <Route>
+              {loggedIn ? <Redirect to='/' /> : <Redirect to='sign-in' />}
+          </Route>
           <Footer />
           <EditAvatarPopup
               isOpen={isEditAvatarPopupOpen}
