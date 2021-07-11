@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__question/auth__question.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/InfoTooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/fail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/sucess.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/auth/__input/auth__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/auth/__input/auth__input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,7 +68,7 @@
       <workItem from="1625909759828" duration="2404000" />
       <workItem from="1625912514461" duration="1458000" />
       <workItem from="1625915209183" duration="8890000" />
-      <workItem from="1625994252934" duration="9132000" />
+      <workItem from="1625994252934" duration="11117000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -104,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625926381095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version 12.0.1&#10;Done: &#10;-Registration page &#10;-infotooltip">
+      <created>1626005631272</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626005631272</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +120,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
     <MESSAGE value="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page" />
+    <MESSAGE value="version 12.0.1&#10;Done: &#10;-Registration page &#10;-infotooltip" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.1&#10;Done: &#10;-Registration page &#10;-infotooltip" />
   </component>
 </project>
