@@ -1,3 +1,5 @@
 .header__auth{
     max-height: 53px;
+    display: flex;
+    flex-direction: row;
 }

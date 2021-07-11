@@ -122,11 +122,11 @@ function App() {
             .catch((err) => console.log(err))
     }
     function closeAllPopups() {
-        setIsEditProfilePopupOpen(false);
-        setIsEditAvatarPopupOpen(false);
-        setIsAddCardPopupOpen(false);
-        setIsConfirmPopupOpen(false)
-        setSelectedCard(null);
+        setIsEditAvatarPopupOpen(false)
+        setIsEditProfilePopupOpen(false)
+        setIsAddCardPopupOpen(false)
+        setIsInfoTooltipPopupOpen(false)
+        setSelectedCard(null)
     }
 
     function handleRegister(email, password) {

@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="version 12.0.3&#10;Done: &#10;auth js">
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__auth_img/popup__auth-img.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__container/_auth/popup__container_auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__title/_auth/popup__title_auth.css" afterDir="false" />
+    <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/auth/__button-submit/auth__button-submit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/auth/__button-submit/auth__button-submit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InfoTooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoTooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProtectedRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +73,7 @@
       <workItem from="1625909759828" duration="2404000" />
       <workItem from="1625912514461" duration="1458000" />
       <workItem from="1625915209183" duration="8890000" />
-      <workItem from="1625994252934" duration="20082000" />
+      <workItem from="1625994252934" duration="21543000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -118,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626007935318</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="version 12.0.4&#10;Done: &#10;-info tools popup">
+      <created>1626018380445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1626018380445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +141,7 @@
     <MESSAGE value="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page" />
     <MESSAGE value="version 12.0.1&#10;Done: &#10;-Registration page &#10;-infotooltip" />
     <MESSAGE value="version 12.0.3&#10;Done: &#10;auth js" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.3&#10;Done: &#10;auth js" />
+    <MESSAGE value="version 12.0.4&#10;Done: &#10;-info tools popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.4&#10;Done: &#10;-info tools popup" />
   </component>
 </project>

@@ -7,8 +7,10 @@
     color: #FFFFFF;
     text-decoration: none;
     transition: all 0.2s ease-out;
+    margin: 0 24px 0 0;
 }
 
-.auth__button-submit:hover {
-    opacity: 0.85;
+.header__auth-style:last-child{
+    margin-right: 0;
 }
+
