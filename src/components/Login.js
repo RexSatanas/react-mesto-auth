@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SignIn (props) {
+function Login (props) {
  return(
      <div className='auth'>
          <h1 className='auth__title'>Войти</h1>
@@ -26,4 +26,4 @@ function SignIn (props) {
  )
 
 }
-export default SignIn
+export default Login

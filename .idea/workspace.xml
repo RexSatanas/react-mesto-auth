@@ -2,65 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__button-submit/auth__button-submit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__form/auth__form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__input/auth__input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__title/auth__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/auth/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProtectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/auth/__question/auth__question.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InfoTooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/fail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/sucess.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/api/assets/scripts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/api/assets/styles.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/api/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/architecture.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/guidelines/plugin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/guidelines/runner.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/source-maps.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/docs/syntax.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/at-rule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/comment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/css-syntax-error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/declaration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/lazy-result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/map-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/postcss.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/postcss.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/previous-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/processor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/result.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/rule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/stringifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/terminal-highlight.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/tokenize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/vendor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/warn-once.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/lib/warning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/postcss/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/supports-color/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/supports-color/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/supports-color/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/supports-color/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/node_modules/supports-color/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resolve-url-loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-url-loader/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/auth/__input/auth__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/auth/__input/auth__input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/components/SignIn.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Registration.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Login.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Header.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/contexts/CurrentUserContext.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/App.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
@@ -93,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -121,7 +80,8 @@
       <workItem from="1625909387557" duration="350000" />
       <workItem from="1625909759828" duration="2404000" />
       <workItem from="1625912514461" duration="1458000" />
-      <workItem from="1625915209183" duration="8642000" />
+      <workItem from="1625915209183" duration="8890000" />
+      <workItem from="1625994252934" duration="9132000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -137,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625915226631</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page">
+      <created>1625926381095</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625926381095</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +123,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.0&#10;Done: &#10;-Redirect &#10;-Login page" />
   </component>
 </project>

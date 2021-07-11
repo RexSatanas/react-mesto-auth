@@ -1,7 +1,9 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom';
 import Header from './Header'
-import SignIn from './SignIn'
+import Login from './Login'
+import Registration from './Registration'
+import InfoTooltip from './InfoTooltip'
 import Main from './Main'
 import Footer from './Footer'
 import EditAvatarPopup from './EditAvatarPopup'
@@ -126,9 +128,10 @@ function App() {
               cards={cards}
           />
           <Route path='/sign-up'>
+              <Registration/>
           </Route>
           <Route path='/sign-in'>
-              <SignIn/>
+              <Login/>
           </Route>
           <Route>
               {loggedIn ? <Redirect to='/' /> : <Redirect to='sign-in' />}
@@ -162,6 +165,7 @@ function App() {
               card={selectedCard !== null && selectedCard}
               onClose={closeAllPopups}
           />
+          <InfoTooltip/>
       </CurrentUserContext.Provider>
   );
 }
