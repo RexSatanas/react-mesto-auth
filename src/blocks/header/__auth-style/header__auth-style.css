@@ -6,4 +6,9 @@
     text-align: right;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all 0.2s ease-out;
+}
+
+.auth__button-submit:hover {
+    opacity: 0.85;
 }

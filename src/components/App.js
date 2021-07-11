@@ -1,5 +1,6 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, useHistory } from 'react-router-dom';
+import * as auth from '../utils/auth'
 import Header from './Header'
 import Login from './Login'
 import Registration from './Registration'
@@ -28,6 +29,20 @@ function App() {
     const [isLoading, setIsLoading] = React.useState(false);
     //логин-регистрация
     const [loggedIn, setLoggedIn] = React.useState(false)
+    const [userEmail, setUserEmail] = React.useState('')
+    const [isInfoTooltipPopupOpen, setIsInfoTooltipPopupOpen] = React.useState(false)
+    const [isSuccessRegistration, setIsSuccessRegistration] = React.useState(false)
+    const history = useHistory()
+
+    React.useEffect(() => {
+        checkToken()
+    }, [loggedIn])
+
+    React.useEffect(() => {
+        if (loggedIn) {
+            history.push('/')
+        }
+    }, [loggedIn, history])
 
     React.useEffect(() => {
         Promise.all([
@@ -114,11 +129,69 @@ function App() {
         setSelectedCard(null);
     }
 
-  return (
+    function handleRegister(email, password) {
+        return auth.register(email, password)
+            .then(res => {
+                localStorage.setItem('token', res.token)
+                setIsInfoTooltipPopupOpen(true)
+                history.push('/sign-in')
+            })
+            .catch(() => {
+                setIsInfoTooltipPopupOpen(true)
+                setIsSuccessRegistration(false)
+            })
+            .catch(err => {
+                console.log(`Не удалось зарегистрироваться. Ошибка: ${err}.`)
+            })
+    }
+
+    function handleLogin(email, password) {
+        return auth.authorization(email, password)
+            .then(res => {
+                localStorage.setItem('token', res.token)
+                setLoggedIn(true)
+                history.push('/')
+            })
+            .catch(err => {
+                console.log(`Не удалось войти. Ошибка: ${err}.`)
+            })
+    }
+
+    function checkToken() {
+        const token = localStorage.getItem('token')
+        if (token) {
+            auth.getToken(token)
+                .then(res => {
+                    setUserEmail(res.data.email)
+                    setLoggedIn(true)
+                })
+                .catch(err => {
+                    console.log(`Не удалось передать токен. Ошибка: ${err}.`)
+                })
+        } else {
+            console.log('Нет токена')
+            return
+        }
+    }
+
+    function handleSignOut() {
+        localStorage.removeItem('token')
+        setLoggedIn(false)
+        setUserEmail('')
+        history.push('/sihn-in')
+    }
+
+    return (
       <CurrentUserContext.Provider value={currentUser}>
-          <Header />
+          <Header
+              userEmail={userEmail}
+              loggedIn={loggedIn}
+              onSignOut={handleSignOut}
+          />
           <ProtectedRoute
+              path='/'
               component={Main}
+              loggedIn={loggedIn}
               onEditAvatar={handleEditAvatarClick}
               onEditProfile={handleEditProfileClick}
               onAddPlace={handleAddPlaceClick}
@@ -128,44 +201,54 @@ function App() {
               cards={cards}
           />
           <Route path='/sign-up'>
-              <Registration/>
+              <Registration onRegister={handleRegister}/>
           </Route>
           <Route path='/sign-in'>
-              <Login/>
+              <Login onLogin={handleLogin}/>
           </Route>
           <Route>
               {loggedIn ? <Redirect to='/' /> : <Redirect to='sign-in' />}
           </Route>
           <Footer />
-          <EditAvatarPopup
-              isOpen={isEditAvatarPopupOpen}
-              onClose={closeAllPopups}
-              onUpdateAvatar={handleUpdateAvatar}
-          />
-          <EditProfilePopup
-              isOpen={isEditProfilePopupOpen}
-              onClose={closeAllPopups}
-              onUpdateUser={handleUpdateUser}
-              isLoading={isLoading}
-          />
-          <AddPlacePopup
-              isOpen={isAddCardPopupOpen}
-              onClose={closeAllPopups}
-              onAddCard={handleAddPlaceSubmit}
-              isLoading={isLoading}
-          />
-          <PopupWithConfirm
-              isOpen={isConfirmPopupOpen}
-              onClose={closeAllPopups}
-              onHandleCardDeleteConfirm={handleCardDeleteConfirm}
-              cardId={cardIdToDelete}
-              isLoading={isLoading}
-          />
-          <ImagePopup
-              card={selectedCard !== null && selectedCard}
-              onClose={closeAllPopups}
-          />
-          <InfoTooltip/>
+          {loggedIn &&
+          <>
+              <EditAvatarPopup
+                  isOpen={isEditAvatarPopupOpen}
+                  onClose={closeAllPopups}
+                  onUpdateAvatar={handleUpdateAvatar}
+              />
+              <EditProfilePopup
+                  isOpen={isEditProfilePopupOpen}
+                  onClose={closeAllPopups}
+                  onUpdateUser={handleUpdateUser}
+                  isLoading={isLoading}
+              />
+              <AddPlacePopup
+                  isOpen={isAddCardPopupOpen}
+                  onClose={closeAllPopups}
+                  onAddCard={handleAddPlaceSubmit}
+                  isLoading={isLoading}
+              />
+              <PopupWithConfirm
+                  isOpen={isConfirmPopupOpen}
+                  onClose={closeAllPopups}
+                  onHandleCardDeleteConfirm={handleCardDeleteConfirm}
+                  cardId={cardIdToDelete}
+                  isLoading={isLoading}
+              />
+              <ImagePopup
+                  card={selectedCard !== null && selectedCard}
+                  onClose={closeAllPopups}
+              />
+          </>
+          }
+          {
+              <InfoTooltip
+                  isOpen={isInfoTooltipPopupOpen}
+                  onClose={closeAllPopups}
+                  isRegistration={isSuccessRegistration}
+              />
+          }
       </CurrentUserContext.Provider>
   );
 }
