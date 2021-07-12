@@ -1,5 +1,5 @@
-import success from '../images/sucess.svg'
-import fail from '../images/fail.svg'
+import success from '../images/sucess.png'
+import fail from '../images/fail.png'
 
 
 function InfoTooltip(props) {
