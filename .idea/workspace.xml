@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/auth/__question/auth__question.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/auth/__question/auth__question.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__auth-style/header__auth-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__auth/header__auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/__logo/header__logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/__logo/header__logo.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,8 @@
       <workItem from="1625909759828" duration="2404000" />
       <workItem from="1625912514461" duration="1458000" />
       <workItem from="1625915209183" duration="8890000" />
-      <workItem from="1625994252934" duration="21543000" />
+      <workItem from="1625994252934" duration="21604000" />
+      <workItem from="1626090406489" duration="1481000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626018380445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="version 12.0.5">
+      <created>1626021173307</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626021173307</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +150,7 @@
     <MESSAGE value="version 12.0.1&#10;Done: &#10;-Registration page &#10;-infotooltip" />
     <MESSAGE value="version 12.0.3&#10;Done: &#10;auth js" />
     <MESSAGE value="version 12.0.4&#10;Done: &#10;-info tools popup" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.4&#10;Done: &#10;-info tools popup" />
+    <MESSAGE value="version 12.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.0.5" />
   </component>
 </project>

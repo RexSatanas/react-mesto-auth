@@ -8,4 +8,10 @@
     align-self: center;
     margin-top: 15px;
     text-decoration: none;
+    transition: all 0.2s ease-out;
 }
+
+.auth__question:hover{
+    opacity: 0.6;
+}
+
