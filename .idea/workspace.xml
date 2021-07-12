@@ -54,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/blocks/auth/__title" />
     </key>
   </component>
@@ -71,6 +72,7 @@
       <workItem from="1625915209183" duration="8890000" />
       <workItem from="1625994252934" duration="21604000" />
       <workItem from="1626090406489" duration="2286000" />
+      <workItem from="1626109181105" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -128,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626091924709</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="version 12.1">
+      <created>1626109222606</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626109222606</updated>
+    </task>
+    <task id="LOCAL-00010" summary="version 12.1">
+      <created>1626109362977</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626109362977</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
