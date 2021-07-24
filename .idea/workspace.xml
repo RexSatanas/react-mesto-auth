@@ -75,7 +75,7 @@
       <workItem from="1626109181105" duration="3966000" />
       <workItem from="1627124158057" duration="655000" />
       <workItem from="1627125586059" duration="2933000" />
-      <workItem from="1627129383669" duration="2554000" />
+      <workItem from="1627129383669" duration="3476000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -238,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627142759188</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="version 12.2&#10;fixed login page">
+      <created>1627142861777</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1627142861777</updated>
+    </task>
+    <task id="LOCAL-00025" summary="version 12.2&#10;fixed login page">
+      <created>1627143057793</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1627143057793</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +279,7 @@
     <MESSAGE value="version 12.0.4&#10;Done: &#10;-info tools popup" />
     <MESSAGE value="version 12.0.5" />
     <MESSAGE value="version 12.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 12.1" />
+    <MESSAGE value="version 12.2&#10;fixed login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.2&#10;fixed login page" />
   </component>
 </project>
