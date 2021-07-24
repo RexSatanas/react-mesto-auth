@@ -189,7 +189,7 @@ function App() {
               onSignOut={handleSignOut}
           />
           <ProtectedRoute
-              exact path='/'
+              exact path='/main'
               component={Main}
               loggedIn={loggedIn}
               onEditAvatar={handleEditAvatarClick}
