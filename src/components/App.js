@@ -203,11 +203,11 @@ function App() {
             <Route path='/sign-up'>
                 <Registration onRegister={handleRegister}/>
             </Route>
-            <Route path='/react-mesto-auth/sign-in'>
+            <Route path='/sign-in'>
                 <Login onLogin={handleLogin}/>
             </Route>
             <Route path='/'>
-                {loggedIn ? <Redirect to='/main' /> : <Redirect to='/react-mesto-auth/sign-in' />}
+                {loggedIn ? <Redirect to='/main' /> : <Redirect to='/sign-in' />}
             </Route>
             <Footer />
             {loggedIn &&
