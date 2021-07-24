@@ -211,7 +211,6 @@ function App() {
           </Route>
           <Footer />
           {loggedIn &&
-          <>
               <EditAvatarPopup
                   isOpen={isEditAvatarPopupOpen}
                   onClose={closeAllPopups}
@@ -240,7 +239,6 @@ function App() {
                   card={selectedCard !== null && selectedCard}
                   onClose={closeAllPopups}
               />
-          </>
           }
           {
               <InfoTooltip
