@@ -189,7 +189,7 @@ function App() {
               onSignOut={handleSignOut}
           />
           <ProtectedRoute
-              path='/'
+              path='/main'
               component={Main}
               loggedIn={loggedIn}
               onEditAvatar={handleEditAvatarClick}
@@ -207,7 +207,7 @@ function App() {
               <Login onLogin={handleLogin}/>
           </Route>
           <Route>
-              {loggedIn ? <Redirect to='/' /> : <Redirect to='sign-in' />}
+              {loggedIn ? <Redirect to='/main' /> : <Redirect to='sign-in' />}
           </Route>
           <Footer />
           {loggedIn &&
