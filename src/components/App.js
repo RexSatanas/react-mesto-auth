@@ -207,7 +207,7 @@ function App() {
               <Login onLogin={handleLogin}/>
           </Route>
           <Route path='/'>
-              {loggedIn ? <Redirect to='/' /> : <Redirect to='sign-in' />}
+              {loggedIn ? <Redirect to='/main' /> : <Redirect to='sign-in' />}
           </Route>
           <Footer />
           {loggedIn &&
