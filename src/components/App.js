@@ -182,73 +182,75 @@ function App() {
     }
 
     return (
-      <CurrentUserContext.Provider value={currentUser}>
-          <Header
-              userEmail={userEmail}
-              loggedIn={loggedIn}
-              onSignOut={handleSignOut}
-          />
-          <ProtectedRoute
-              path='/main'
-              component={Main}
-              loggedIn={loggedIn}
-              onEditAvatar={handleEditAvatarClick}
-              onEditProfile={handleEditProfileClick}
-              onAddPlace={handleAddPlaceClick}
-              onCardClick={handleCardClick}
-              onCardLike={handleCardLike}
-              onCardDelete={handleCardDelete}
-              cards={cards}
-          />
-          <Route path='/sign-up'>
-              <Registration onRegister={handleRegister}/>
-          </Route>
-          <Route path='/sign-in'>
-              <Login onLogin={handleLogin}/>
-          </Route>
-          <Route exact path='/'>
-              {loggedIn ? <Redirect to='/main' /> : <Redirect to='sign-in' />}
-          </Route>
-          <Footer />
-          {loggedIn &&
-              <EditAvatarPopup
-                  isOpen={isEditAvatarPopupOpen}
-                  onClose={closeAllPopups}
-                  onUpdateAvatar={handleUpdateAvatar}
-              />
-              <EditProfilePopup
-                  isOpen={isEditProfilePopupOpen}
-                  onClose={closeAllPopups}
-                  onUpdateUser={handleUpdateUser}
-                  isLoading={isLoading}
-              />
-              <AddPlacePopup
-                  isOpen={isAddCardPopupOpen}
-                  onClose={closeAllPopups}
-                  onAddCard={handleAddPlaceSubmit}
-                  isLoading={isLoading}
-              />
-              <PopupWithConfirm
-                  isOpen={isConfirmPopupOpen}
-                  onClose={closeAllPopups}
-                  onHandleCardDeleteConfirm={handleCardDeleteConfirm}
-                  cardId={cardIdToDelete}
-                  isLoading={isLoading}
-              />
-              <ImagePopup
-                  card={selectedCard !== null && selectedCard}
-                  onClose={closeAllPopups}
-              />
-          }
-          {
-              <InfoTooltip
-                  isOpen={isInfoTooltipPopupOpen}
-                  onClose={closeAllPopups}
-                  isRegistration={isSuccessRegistration}
-              />
-          }
-      </CurrentUserContext.Provider>
-  );
+        <CurrentUserContext.Provider value={currentUser}>
+            <Header
+                userEmail={userEmail}
+                loggedIn={loggedIn}
+                onSignOut={handleSignOut}
+            />
+            <ProtectedRoute
+                path='/main'
+                component={Main}
+                loggedIn={loggedIn}
+                onEditAvatar={handleEditAvatarClick}
+                onEditProfile={handleEditProfileClick}
+                onAddPlace={handleAddPlaceClick}
+                onCardClick={handleCardClick}
+                onCardLike={handleCardLike}
+                onCardDelete={handleCardDelete}
+                cards={cards}
+            />
+            <Route path='/sign-up'>
+                <Registration onRegister={handleRegister}/>
+            </Route>
+            <Route path='/react-mesto-auth/sign-in'>
+                <Login onLogin={handleLogin}/>
+            </Route>
+            <Route path='/'>
+                {loggedIn ? <Redirect to='/main' /> : <Redirect to='/react-mesto-auth/sign-in' />}
+            </Route>
+            <Footer />
+            {loggedIn &&
+            <>
+                <EditAvatarPopup
+                    isOpen={isEditAvatarPopupOpen}
+                    onClose={closeAllPopups}
+                    onUpdateAvatar={handleUpdateAvatar}
+                />
+                <EditProfilePopup
+                    isOpen={isEditProfilePopupOpen}
+                    onClose={closeAllPopups}
+                    onUpdateUser={handleUpdateUser}
+                    isLoading={isLoading}
+                />
+                <AddPlacePopup
+                    isOpen={isAddCardPopupOpen}
+                    onClose={closeAllPopups}
+                    onAddCard={handleAddPlaceSubmit}
+                    isLoading={isLoading}
+                />
+                <PopupWithConfirm
+                    isOpen={isConfirmPopupOpen}
+                    onClose={closeAllPopups}
+                    onHandleCardDeleteConfirm={handleCardDeleteConfirm}
+                    cardId={cardIdToDelete}
+                    isLoading={isLoading}
+                />
+                <ImagePopup
+                    card={selectedCard !== null && selectedCard}
+                    onClose={closeAllPopups}
+                />
+            </>
+            }
+            {
+                <InfoTooltip
+                    isOpen={isInfoTooltipPopupOpen}
+                    onClose={closeAllPopups}
+                    isRegistration={isSuccessRegistration}
+                />
+            }
+        </CurrentUserContext.Provider>
+    );
 }
 
 export default App;

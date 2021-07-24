@@ -16,7 +16,8 @@ function Header(props) {
                             Выйти
                         </Link>
                     </>
-                ) : (
+
+                    ) : (
                     <Link
                         className="header__signin header__auth-style"
                         to={`${location.pathname === '/sign-in' ? '/sign-up' : '/sign-in'}`}>
