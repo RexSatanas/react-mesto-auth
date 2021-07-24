@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e1587faa-bc9f-4160-8b03-9f39fc3251b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/components/Registration.js" root0="FORCE_HIGHLIGHTING" />
@@ -29,7 +29,7 @@
     <setting file="file://$PROJECT_DIR$/src/components/Login.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/components/Header.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/contexts/CurrentUserContext.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/components/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/App.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1v7Nte6DOHP5efvOBbT5AokQjgO" />
@@ -52,6 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.reader.mode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -76,7 +77,9 @@
       <workItem from="1625994252934" duration="21604000" />
       <workItem from="1626090406489" duration="2286000" />
       <workItem from="1626109181105" duration="3966000" />
-      <workItem from="1627124158057" duration="323000" />
+      <workItem from="1627124158057" duration="655000" />
+      <workItem from="1627125586059" duration="2933000" />
+      <workItem from="1627129383669" duration="6539000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1625915149730</created>
@@ -183,7 +186,147 @@
       <option name="project" value="LOCAL" />
       <updated>1626113461181</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="version 12.1">
+      <created>1627124619832</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627124619832</updated>
+    </task>
+    <task id="LOCAL-00017" summary="version 12.1">
+      <created>1627124720144</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1627124720144</updated>
+    </task>
+    <task id="LOCAL-00018" summary="version 12.1">
+      <created>1627126164018</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1627126164018</updated>
+    </task>
+    <task id="LOCAL-00019" summary="version 12.1">
+      <created>1627127550925</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1627127550925</updated>
+    </task>
+    <task id="LOCAL-00020" summary="version 12.1">
+      <created>1627128045314</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1627128045314</updated>
+    </task>
+    <task id="LOCAL-00021" summary="version 12.1">
+      <created>1627129437071</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1627129437071</updated>
+    </task>
+    <task id="LOCAL-00022" summary="version 12.1">
+      <created>1627142099963</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1627142099963</updated>
+    </task>
+    <task id="LOCAL-00023" summary="version 12.1">
+      <created>1627142759188</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1627142759188</updated>
+    </task>
+    <task id="LOCAL-00024" summary="version 12.2&#10;fixed login page">
+      <created>1627142861777</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1627142861777</updated>
+    </task>
+    <task id="LOCAL-00025" summary="version 12.2&#10;fixed login page">
+      <created>1627143057793</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1627143057793</updated>
+    </task>
+    <task id="LOCAL-00026" summary="version 12.2&#10;fixed login page">
+      <created>1627144393335</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1627144393335</updated>
+    </task>
+    <task id="LOCAL-00027" summary="version 12.2&#10;fixed login page">
+      <created>1627145808609</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1627145808609</updated>
+    </task>
+    <task id="LOCAL-00028" summary="version 12.2&#10;fixed login page">
+      <created>1627145842591</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1627145842591</updated>
+    </task>
+    <task id="LOCAL-00029" summary="version 12.2&#10;fixed login page">
+      <created>1627146811880</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1627146811880</updated>
+    </task>
+    <task id="LOCAL-00030" summary="version 12.2&#10;fixed login page">
+      <created>1627147571639</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1627147571639</updated>
+    </task>
+    <task id="LOCAL-00031" summary="version 12.2&#10;fixed login page">
+      <created>1627148442492</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1627148442492</updated>
+    </task>
+    <task id="LOCAL-00032" summary="version 12.2&#10;fixed login page">
+      <created>1627148526452</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1627148526452</updated>
+    </task>
+    <task id="LOCAL-00033" summary="version 12.2&#10;fixed login page">
+      <created>1627148620215</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1627148620215</updated>
+    </task>
+    <task id="LOCAL-00034" summary="version 12.2&#10;fixing login page">
+      <created>1627149147942</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1627149147942</updated>
+    </task>
+    <task id="LOCAL-00035" summary="version 12.2&#10;fixing login page">
+      <created>1627149199284</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1627149199284</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +353,8 @@
     <MESSAGE value="version 12.0.4&#10;Done: &#10;-info tools popup" />
     <MESSAGE value="version 12.0.5" />
     <MESSAGE value="version 12.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 12.1" />
+    <MESSAGE value="version 12.2&#10;fixed login page" />
+    <MESSAGE value="version 12.2&#10;fixing login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 12.2&#10;fixing login page" />
   </component>
 </project>
