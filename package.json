@@ -1,6 +1,6 @@
 {
-  "homepage": "https://rexsatanas.github.io/react-mesto-auth/",
-  "name": "react-mesto-auth",
+  "homepage": "http://rexsatanas.github.io/mesto-react-auth",
+  "name": "mesto-react-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
