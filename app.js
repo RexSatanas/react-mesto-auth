@@ -1,11 +1,37 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const { PORT = 3000 } = process.env;
+const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/mestodb', {
+// роуты
+const usersRoute = require("./routes/users");
+const cardsRoute = require("./routes/cards");
+
+//  задаём порт
+const { PORT = 3000 } = process.env;
+
+
+// подключаение к серверу mongo
+mongoose.connect("mongodb://localhost:27017/mestodb", {
   useNewUrlParser: true,
   useCreateIndex: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
+
+app.use(express.json());
+
+app.use((req, res, next) => {
+  req.user = {
+    _id: "60fe9612049b911732dc6d0f",
+  };
+
+  next();
+});
+
+app.use("/", usersRoute);
+app.use("/", cardsRoute);
+
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
 });
